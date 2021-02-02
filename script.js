@@ -1,14 +1,12 @@
-
-
 const button = document.querySelector("button")
-const body = document.querySelector("body").style.background = "#a5a58d"
-const color = ["red", "green", "pink", "darkblue", "blue"]
+const body = document.querySelector("body")
+const color = ["red", "green", "pink", "blue", "yellow"]
 
+body.style.backgroundColor = 'grey'
 
+button.addEventListener('click', changebgColor)
 
-button.addEventListener('click', changeBackgroundColor)
-
-function changeBackgroundColor(){
-    const changeColor = parseInt(Math.random()*color.length)
-    body.style.changeBackgroundColor = color[changeColor]
+function changebgColor(){
+    const colorChange = parseInt(Math.random()*color.length)
+    body.style.backgroundColor = color[colorChange]
 }

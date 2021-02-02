@@ -21,4 +21,6 @@ button{
 button:hover{
     background-color: cadetblue;
     cursor: pointer;
+    border: 0.5px solid rgba(0, 0, 0, 0.178);
+    outline: 0ch;
 }
